@@ -1,11 +1,14 @@
 {
-  "name": "ng-bootstrap-form-validation",
-  "version": "0.0.1",
+  "name": "@creamteam-de/ng-bootstrap-form-validation",
+  "version": "9.0.1",
   "engine": {
     "node": ">=10.0.0"
   },
   "peerDependencies": {
     "@angular/common": "^9.0.0",
     "@angular/core": "^9.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://192.168.1.76:87/repository/npm-private/"
   }
 }
