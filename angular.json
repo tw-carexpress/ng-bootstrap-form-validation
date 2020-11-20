@@ -138,7 +138,7 @@
       "prefix": "bfv",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ng-bootstrap-form-validation/tsconfig.lib.json",
             "project": "projects/ng-bootstrap-form-validation/ng-package.json"
