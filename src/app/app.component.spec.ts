@@ -19,7 +19,7 @@ describe("AppComponent", () => {
         ReactiveFormsModule,
         BootstrapThreeModule,
         BootstrapFourModule,
-        RouterModule.forRoot(appRoutes),
+        RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
         NgBootstrapFormValidationModule.forRoot()
       ],
       declarations: [AppComponent],
