@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed, waitForAsync } from "@angular/core/testing";
 
 import { BOOTSTRAP_VERSION } from "../../Tokens/tokens";
 import { BootstrapVersion } from "../../Enums/BootstrapVersion";
@@ -8,7 +8,7 @@ describe("MessagesComponent", () => {
   let component: MessagesComponent;
   let fixture: ComponentFixture<MessagesComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [MessagesComponent],
       providers: [
