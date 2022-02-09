@@ -1,5 +1,5 @@
 {
-  "name": "@creamteam-de/ng-bootstrap-form-validation",
+  "name": "@kwsoft/ng-bootstrap-form-validation",
   "version": "9.0.1",
   "engine": {
     "node": ">=10.0.0"
@@ -7,13 +7,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --configuration production",
+    "build:app": "ng build --configuration production",
+    "build:watch": "ng build --watch --project ng-bootstrap-form-validation",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "clean": "rimraf dist && rimraf .ng_build",
     "pretty": "prettier --write \"**/*.ts\"",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "link": "cd ./dist/ng-bootstrap-form-validation && npm link --no-package-lock"
   },
   "lint-staged": {
     "*.ts": [
