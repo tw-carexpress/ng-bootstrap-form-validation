@@ -2,7 +2,6 @@ import { CommonModule } from "@angular/common";
 import { NgModule, ModuleWithProviders } from "@angular/core";
 import { FormValidationDirective } from "./Directives/form-validation.directive";
 import { MessagesComponent } from "./Components/messages/messages.component";
-import { ErrorMessageService } from "./Services/error-message.service";
 import { CUSTOM_ERROR_MESSAGES, BOOTSTRAP_VERSION } from "./Tokens/tokens";
 import { BootstrapVersion } from "./Enums/BootstrapVersion";
 import { FormGroupComponent } from "./Components/form-group/form-group.component";
@@ -41,8 +40,7 @@ export class NgBootstrapFormValidationModule {
         {
           provide: BOOTSTRAP_VERSION,
           useValue: userOptions.bootstrapVersion
-        },
-        ErrorMessageService
+        }
       ]
     };
   }

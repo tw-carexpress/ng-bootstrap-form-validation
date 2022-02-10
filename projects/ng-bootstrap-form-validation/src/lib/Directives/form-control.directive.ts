@@ -23,8 +23,6 @@ export function controlPath(name: string, parent: ControlContainer): string[] {
 export class FormControlDirective {
   @Input()
   formControlName: string;
-  @Input()
-  formControl: string;
 
   @HostBinding("class.is-valid")
   get validClass() {

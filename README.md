@@ -8,11 +8,21 @@ An Angular module that makes Bootstrap form validation easy.
 
 Check out [the demo](https://third774.github.io/ng-bootstrap-form-validation)!
 
-*Note: v9.0.0 is out and supports Angular 9!*
+*Note: Supports Angular 12!*
+
+## Running locally
+
+### Linking the library
+
+To link the library to use it in the branding module or another library follow these steps:
+
+1. Build the library using `npm run build:watch` (this builds the library in a watch mode)
+1. To link the library `npm run link`
+1. Open the module in which you want to consume the library (e.g. probably `@kwsoft/common-ng-form`) and run `npm link @kwsoft/ng-bootstrap-form-validation`
 
 ## Install
 
-1) Install by running `npm install ng-bootstrap-form-validation --save`
+1) Install by running `npm install @kwsoft/ng-bootstrap-form-validation --save`
 
 2) Add `NgBootstrapFormValidationModule.forRoot()` to your `app.module.ts` imports:
 
