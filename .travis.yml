@@ -11,7 +11,7 @@ deploy:
       secure: FHdWgTg1vCrf/pcSnyIf44zHRoqkauDSne4LRnI5Nsryvm+rqXgwUN7lKX/ODDMlGLiX4AzOUB6Rb2JnakoTHT77/TCO/kTZYV3ZPF4ImZDA8d7OyRZhwEk4yNg8Zbe8ej4F+MWE/FaK+vdxKDP3JrLg4OUwFTuabE4xbwYR9udjgCCFCS0UJypS13dzjtTdVnUBXfek22wtOoEJvTB6t2EfDa640hcx+fAKDpoQKy8s2zYXvgAAQIYxaKWW1xfC4atxE2Pdi50yONJt/CGgRxd9MbqiMsjvN82rBHD54qA/VQ1nTvwbWD7B/i23HKSA1C0iSuhDbcVS/e28QdaI6wor1lDriOqQygY6Gz6NLFdQHG+IPv4tohKq9li5jcnmtcsTcmSU0YnhIxx9CFNJWa98Yynaodh7sVeX+oxMJI4ORBDqYQDogY/ZU9PBuXl3lWnP0r3OBKlRAq1ewFrWGy4v2NlPu37z2GhbBssQqDsq0s1ygGRMqyMXq+3mMhQ8j84d7dbqc/bbzaHM7YQ3y5HQkkToPC5w7pey/lbTm0C8UYX9PgxREvy98JvvEk+nNOsYOjJ4upcpMi7sP4jfoFBBL32iq+1ylPnIsSERruFWrCAuj3xWZKYExDpvjCL7JZDlVi30KitgjQcFiVW3D94DQoOdfcnQch019A5C624=
     on:
       tags: true
-      repo: third774/ng-bootstrap-form-validation
+      repo: kwsoft/ng-bootstrap-form-validation
   - provider: npm
     skip_cleanup: true
     tag: next
@@ -20,4 +20,4 @@ deploy:
       secure: FHdWgTg1vCrf/pcSnyIf44zHRoqkauDSne4LRnI5Nsryvm+rqXgwUN7lKX/ODDMlGLiX4AzOUB6Rb2JnakoTHT77/TCO/kTZYV3ZPF4ImZDA8d7OyRZhwEk4yNg8Zbe8ej4F+MWE/FaK+vdxKDP3JrLg4OUwFTuabE4xbwYR9udjgCCFCS0UJypS13dzjtTdVnUBXfek22wtOoEJvTB6t2EfDa640hcx+fAKDpoQKy8s2zYXvgAAQIYxaKWW1xfC4atxE2Pdi50yONJt/CGgRxd9MbqiMsjvN82rBHD54qA/VQ1nTvwbWD7B/i23HKSA1C0iSuhDbcVS/e28QdaI6wor1lDriOqQygY6Gz6NLFdQHG+IPv4tohKq9li5jcnmtcsTcmSU0YnhIxx9CFNJWa98Yynaodh7sVeX+oxMJI4ORBDqYQDogY/ZU9PBuXl3lWnP0r3OBKlRAq1ewFrWGy4v2NlPu37z2GhbBssQqDsq0s1ygGRMqyMXq+3mMhQ8j84d7dbqc/bbzaHM7YQ3y5HQkkToPC5w7pey/lbTm0C8UYX9PgxREvy98JvvEk+nNOsYOjJ4upcpMi7sP4jfoFBBL32iq+1ylPnIsSERruFWrCAuj3xWZKYExDpvjCL7JZDlVi30KitgjQcFiVW3D94DQoOdfcnQch019A5C624=
     on:
       branch: master
-      repo: third774/ng-bootstrap-form-validation
+      repo: kwsoft/ng-bootstrap-form-validation

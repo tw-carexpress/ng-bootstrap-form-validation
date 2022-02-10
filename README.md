@@ -2,8 +2,8 @@
 
 An Angular module that makes Bootstrap form validation easy.
 
-[![Build Status](https://travis-ci.org/third774/ng-bootstrap-form-validation.svg?branch=master)](https://travis-ci.org/third774/ng-bootstrap-form-validation)
-[![Dependencies](https://david-dm.org/third774/ng-bootstrap-form-validation.svg)](https://david-dm.org/third774/ng-bootstrap-form-validation.svg)
+[![Build Status](https://travis-ci.org/kwsoft/ng-bootstrap-form-validation.svg?branch=master)](https://travis-ci.org/kwsoft/ng-bootstrap-form-validation)
+[![Dependencies](https://david-dm.org/kwsoft/ng-bootstrap-form-validation.svg)](https://david-dm.org/kwsoft/ng-bootstrap-form-validation.svg)
 [![npm downloads](https://img.shields.io/npm/dm/ng-bootstrap-form-validation.svg)](http://npm-stat.com/charts.html?package=ng-bootstrap-form-validation)
 
 Check out [the demo](https://third774.github.io/ng-bootstrap-form-validation)!

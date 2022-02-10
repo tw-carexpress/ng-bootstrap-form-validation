@@ -1,17 +1,17 @@
 {
   "name": "@kwsoft/ng-bootstrap-form-validation",
-  "version": "11.0.0",
+  "version": "12.0.0",
   "engine": {
     "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^9.0.0",
-    "@angular/core": "^9.0.0"
+    "@angular/common": "^12.2.16",
+    "@angular/core": "^12.2.16"
   },
   "dependencies": {
     "tslib": "^2.0.0"
   },
   "publishConfig": {
-    "registry": "http://192.168.1.76:87/repository/npm-private/"
+    "registry": "http://npm.kwsoft.local/"
   }
 }
