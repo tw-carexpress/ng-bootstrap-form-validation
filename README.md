@@ -1,18 +1,31 @@
-# ng-bootstrap-form-validation
+# @kwsoft/ng-bootstrap-form-validation
 
-An Angular module that makes Bootstrap form validation easy.
-
-[![Build Status](https://travis-ci.org/kwsoft/ng-bootstrap-form-validation.svg?branch=master)](https://travis-ci.org/kwsoft/ng-bootstrap-form-validation)
-[![Dependencies](https://david-dm.org/kwsoft/ng-bootstrap-form-validation.svg)](https://david-dm.org/kwsoft/ng-bootstrap-form-validation.svg)
-[![npm downloads](https://img.shields.io/npm/dm/ng-bootstrap-form-validation.svg)](http://npm-stat.com/charts.html?package=ng-bootstrap-form-validation)
+An Angular module that makes Bootstrap form validation easy. 
 
 Check out [the demo](https://third774.github.io/ng-bootstrap-form-validation)!
 
-*Note: Supports Angular 12!*
+## Kwsoft Fork
 
-## Running locally
+This repository is only for internal usage and not published to the public npm registry!
 
-### Linking the library
+The module is forked from [creamteam-de/ng-bootstrap-form-validation](https://github.com/creamteam-de/ng-bootstrap-form-validation).
+The fork
+
+- upgrades angular to v12
+- fixes bugs:
+  - conflicting types for `@Input() formControl` in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/8f869e5a2b8494ccc2eb4599f8c733228b505466). ([Original Issue](https://github.com/third774/ng-bootstrap-form-validation/issues/103))
+  - custom provided error messages not available in lazy loaded components in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/7ab8a9699374fdaee30a42746591fdc0940f0e79)
+- configures the kwsoft npm registry 
+
+### Build and Publish
+
+At the moment there is not CICD build setup. Therefore, to build and publish the library to the internal @kwsoft registry follow these steps:
+
+- Build the library: `ng build --prod --project ng-bootstrap-form-validation`
+- Go the the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\` 
+- Run `npm publish --access public` (use your `AD` credentials)
+
+### Local Development and Linking
 
 To link the library to use it in the branding module or another library follow these steps:
 
