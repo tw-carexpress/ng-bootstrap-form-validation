@@ -29,7 +29,7 @@ At the moment there is not CICD build setup. Therefore, to build and publish the
 
 To link the library to use it in the branding module or another library follow these steps:
 
-1. Build the library using `npm run build:watch` (this builds the library in a watch mode)
+1. Build the library using `npm run watch:library` (this builds the library in a watch mode)
 1. To link the library `npm run link`
 1. Open the module in which you want to consume the library (e.g. probably `@kwsoft/common-ng-form`) and run `npm link @kwsoft/ng-bootstrap-form-validation`
 
