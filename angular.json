@@ -95,6 +95,15 @@
               "src/assets"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -130,9 +139,9 @@
           },
           "configurations": {
             "production": {
-              "project": "projects/ng-bootstrap-form-validation/ng-package.prod.json"
-            ,              "tsConfig": "projects/ng-bootstrap-form-validation/tsconfig.lib.prod.json"
-}
+              "project": "projects/ng-bootstrap-form-validation/ng-package.prod.json",
+              "tsConfig": "projects/ng-bootstrap-form-validation/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -146,5 +155,8 @@
       }
     }
   },
-  "defaultProject": "ngx-bootstrap-form-validation"
+  "defaultProject": "ngx-bootstrap-form-validation",
+  "cli": {
+    "defaultCollection": "@angular-eslint/schematics"
+  }
 }
