@@ -18,7 +18,7 @@ import { NgBootstrapFormValidationModule } from "../../projects/ng-bootstrap-for
     ReactiveFormsModule,
     BootstrapThreeModule,
     BootstrapFourModule,
-    RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
+    RouterModule.forRoot(appRoutes, { relativeLinkResolution: "legacy" }),
     NgBootstrapFormValidationModule.forRoot()
   ],
   providers: [],

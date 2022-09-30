@@ -8,17 +8,19 @@ describe("MessagesComponent", () => {
   let component: MessagesComponent;
   let fixture: ComponentFixture<MessagesComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      declarations: [MessagesComponent],
-      providers: [
-        {
-          provide: BOOTSTRAP_VERSION,
-          useValue: BootstrapVersion.Four
-        }
-      ]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        declarations: [MessagesComponent],
+        providers: [
+          {
+            provide: BOOTSTRAP_VERSION,
+            useValue: BootstrapVersion.Four
+          }
+        ]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(MessagesComponent);
