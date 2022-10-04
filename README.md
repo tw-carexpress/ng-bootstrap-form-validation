@@ -25,7 +25,7 @@ At the moment there is no CICD build setup. Therefore, to build and publish the 
 - Verify demo application at `npm start` starts and works
 - Adapt the version in the `package.json` files
 - Build the library: `ng build --prod --project ng-bootstrap-form-validation`
-- Go the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\` 
+- Go to the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\` 
 - Run `npm publish --access public` (use your `AD` credentials)
 
 ### Local Development and Linking
