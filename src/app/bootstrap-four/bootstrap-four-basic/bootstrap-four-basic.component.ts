@@ -6,7 +6,7 @@ import { FormGroup, FormControl, Validators, FormArray } from "@angular/forms";
   templateUrl: "./bootstrap-four-basic.component.html",
   styleUrls: ["./bootstrap-four-basic.component.css"]
 })
-export class BootstrapFourBasicComponent implements OnInit {
+export class BootstrapFourBasicComponent {
   formGroup = new FormGroup({
     firstName: new FormControl("", Validators.required),
     lastName: new FormControl("", Validators.required),
@@ -23,10 +23,6 @@ export class BootstrapFourBasicComponent implements OnInit {
     agreeToTerms: new FormControl(false, Validators.required),
     bestPet: new FormControl(null, Validators.required)
   });
-
-  constructor() {}
-
-  ngOnInit() {}
 
   handleValidSubmit() {
     console.log(this.formGroup.value);

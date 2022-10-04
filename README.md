@@ -11,7 +11,7 @@ This repository is only for internal usage and not published to the public npm r
 The module is forked from [creamteam-de/ng-bootstrap-form-validation](https://github.com/creamteam-de/ng-bootstrap-form-validation).
 The fork
 
-- upgrades angular to v12
+- upgrades angular to v13
 - fixes bugs:
   - conflicting types for `@Input() formControl` in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/8f869e5a2b8494ccc2eb4599f8c733228b505466). ([Original Issue](https://github.com/third774/ng-bootstrap-form-validation/issues/103))
   - custom provided error messages not available in lazy loaded components in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/7ab8a9699374fdaee30a42746591fdc0940f0e79)
@@ -19,10 +19,13 @@ The fork
 
 ### Build and Publish
 
-At the moment there is not CICD build setup. Therefore, to build and publish the library to the internal @kwsoft registry follow these steps:
+At the moment there is no CICD build setup. Therefore, to build and publish the library to the internal @kwsoft registry follow these steps:
 
+- Verify `npm run test`, `npm run lint` run successfully
+- Verify demo application at `npm start` starts and works
+- Adapt the version in the `package.json` files
 - Build the library: `ng build --prod --project ng-bootstrap-form-validation`
-- Go the the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\` 
+- Go to the `dist` folder: `cd .\dist\ng-bootstrap-form-validation\` 
 - Run `npm publish --access public` (use your `AD` credentials)
 
 ### Local Development and Linking

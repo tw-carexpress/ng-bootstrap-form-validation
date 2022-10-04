@@ -5,8 +5,4 @@ import { Component, OnInit } from "@angular/core";
   templateUrl: "./bootstrap-four-nav.component.html",
   styleUrls: ["./bootstrap-four-nav.component.css"]
 })
-export class BootstrapFourNavComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class BootstrapFourNavComponent {}

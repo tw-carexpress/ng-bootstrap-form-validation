@@ -8,16 +8,18 @@ describe("BootstrapFourBasicComponent", () => {
   let component: BootstrapFourBasicComponent;
   let fixture: ComponentFixture<BootstrapFourBasicComponent>;
 
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        FormsModule,
-        ReactiveFormsModule,
-        NgBootstrapFormValidationModule.forRoot()
-      ],
-      declarations: [BootstrapFourBasicComponent]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          FormsModule,
+          ReactiveFormsModule,
+          NgBootstrapFormValidationModule.forRoot()
+        ],
+        declarations: [BootstrapFourBasicComponent]
+      }).compileComponents();
+    })
+  );
 
   beforeEach(() => {
     fixture = TestBed.createComponent(BootstrapFourBasicComponent);
