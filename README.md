@@ -15,6 +15,7 @@ The fork
 - fixes bugs:
   - conflicting types for `@Input() formControl` in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/8f869e5a2b8494ccc2eb4599f8c733228b505466). ([Original Issue](https://github.com/third774/ng-bootstrap-form-validation/issues/103))
   - custom provided error messages not available in lazy loaded components in [this commit](https://github.com/kwsoft/ng-bootstrap-form-validation/commit/7ab8a9699374fdaee30a42746591fdc0940f0e79)
+  - does not trigger a value change event on submit
 - configures the kwsoft npm registry 
 
 ### Build and Publish
