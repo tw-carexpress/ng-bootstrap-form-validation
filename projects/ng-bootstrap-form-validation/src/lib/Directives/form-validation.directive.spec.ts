@@ -8,7 +8,7 @@ describe("FormGroupDirective", () => {
     expect(directive).toBeTruthy();
   });
 
-  describe("updateValueAndValiditySilent", () => {
+  describe("updateValueAndValiditySilently", () => {
     let control: FormControl;
     const directive = new FormValidationDirective();
 
@@ -16,10 +16,10 @@ describe("FormGroupDirective", () => {
       control = new FormControl("name");
     });
 
-    it("call updateValueAndValidity without event emit", () => {
+    it("calls updateValueAndValidity without event emit", () => {
       spyOn(control, "updateValueAndValidity");
 
-      directive.updateValueAndValiditySilent(control);
+      directive.updateValueAndValiditySilently(control);
 
       expect(control.updateValueAndValidity).toHaveBeenCalledOnceWith({ emitEvent: false });
     });
@@ -27,7 +27,7 @@ describe("FormGroupDirective", () => {
     it("emits status change event", () => {
       const spyEmitStatusChanges = spyOn((control.statusChanges as EventEmitter<FormControlStatus>), "emit");
 
-      directive.updateValueAndValiditySilent(control);
+      directive.updateValueAndValiditySilently(control);
 
       expect(spyEmitStatusChanges).toHaveBeenCalledOnceWith("VALID");
     });
@@ -35,7 +35,7 @@ describe("FormGroupDirective", () => {
     it("does not emit value change event", () => {
       const spyValueChanges = spyOn((control.valueChanges as EventEmitter<any>), "emit");
 
-      directive.updateValueAndValiditySilent(control);
+      directive.updateValueAndValiditySilently(control);
 
       expect(spyValueChanges).not.toHaveBeenCalled();
     });
@@ -43,9 +43,9 @@ describe("FormGroupDirective", () => {
     it("call the updateValueAndValiditySilent for the parent", () => {
       const parent = new FormGroup({});
       control.setParent(parent);
-      const spyUpdateValueAndValiditySilent = spyOn(directive, "updateValueAndValiditySilent").and.callThrough();
+      const spyUpdateValueAndValiditySilent = spyOn(directive, "updateValueAndValiditySilently").and.callThrough();
 
-      directive.updateValueAndValiditySilent(control);
+      directive.updateValueAndValiditySilently(control);
 
       expect(spyUpdateValueAndValiditySilent).toHaveBeenCalledTimes(2);
       expect(spyUpdateValueAndValiditySilent).toHaveBeenCalledWith(control);

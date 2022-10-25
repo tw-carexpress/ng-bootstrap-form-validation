@@ -40,7 +40,7 @@ export class FormValidationDirective {
     } else if (control instanceof FormControl && control.enabled) {
       control.markAsDirty();
       control.markAsTouched();
-      this.updateValueAndValiditySilent(control);
+      this.updateValueAndValiditySilently(control);
     }
   }
 
@@ -53,12 +53,12 @@ export class FormValidationDirective {
    * @see angular implementation: https://github.com/angular/angular/blob/main/packages/forms/src/model/abstract_model.ts#L1045
    * @fixes https://redmine.kwsoft.ch/issues/14376
    */
-  updateValueAndValiditySilent(control: AbstractControl) {
+  updateValueAndValiditySilently(control: AbstractControl) {
     control.updateValueAndValidity({emitEvent: false});
 
     (control.statusChanges as EventEmitter<FormControlStatus>).emit(control.status);
     if (control.parent) {
-      this.updateValueAndValiditySilent(control.parent);
+      this.updateValueAndValiditySilently(control.parent);
     }
   }
 }
