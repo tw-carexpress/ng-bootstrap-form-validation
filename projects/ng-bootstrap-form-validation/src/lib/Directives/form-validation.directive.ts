@@ -8,7 +8,7 @@ import {
 import {
   AbstractControl,
   FormArray,
-  FormControl,
+  FormControl, FormControlStatus,
   FormGroup
 } from "@angular/forms";
 
@@ -40,7 +40,25 @@ export class FormValidationDirective {
     } else if (control instanceof FormControl && control.enabled) {
       control.markAsDirty();
       control.markAsTouched();
-      control.updateValueAndValidity();
+      this.updateValueAndValiditySilently(control);
+    }
+  }
+
+  /**
+   * Custom function for updating the value and validity of a control without triggering a value change event.
+   * The implementation does the following:
+   *  - calls the standard `AbstractControl.updateValueAndValidity` without emitting events
+   *  - manually emit the statusChange event
+   *  - call the same method for the parent, if defined
+   * @see angular implementation: https://github.com/angular/angular/blob/main/packages/forms/src/model/abstract_model.ts#L1045
+   * @fixes https://redmine.kwsoft.ch/issues/14376
+   */
+  updateValueAndValiditySilently(control: AbstractControl) {
+    control.updateValueAndValidity({emitEvent: false});
+
+    (control.statusChanges as EventEmitter<FormControlStatus>).emit(control.status);
+    if (control.parent) {
+      this.updateValueAndValiditySilently(control.parent);
     }
   }
 }
