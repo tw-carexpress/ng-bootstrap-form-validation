@@ -12,6 +12,6 @@
     "tslib": "^2.0.0"
   },
   "publishConfig": {
-    "registry": "https://nexus.creamteam.de/repository/npm-private/"
+    "registry": "https://gitlab.teamcl.de/api/v4/projects/217/packages/npm/"
   }
 }
