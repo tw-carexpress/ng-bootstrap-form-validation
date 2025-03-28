@@ -11,25 +11,30 @@ import { NgBootstrapFormValidationModule } from "../../projects/ng-bootstrap-for
 import { appRoutes } from "./app.routes";
 
 describe("AppComponent", () => {
-  beforeEach(waitForAsync(() => {
-    TestBed.configureTestingModule({
-      imports: [
-        BrowserModule,
-        FormsModule,
-        ReactiveFormsModule,
-        BootstrapThreeModule,
-        BootstrapFourModule,
-        RouterModule.forRoot(appRoutes, { relativeLinkResolution: 'legacy' }),
-        NgBootstrapFormValidationModule.forRoot()
-      ],
-      declarations: [AppComponent],
-      providers: [{ provide: APP_BASE_HREF, useValue: "/" }]
-    }).compileComponents();
-  }));
+  beforeEach(
+    waitForAsync(() => {
+      TestBed.configureTestingModule({
+        imports: [
+          BrowserModule,
+          FormsModule,
+          ReactiveFormsModule,
+          BootstrapThreeModule,
+          BootstrapFourModule,
+          RouterModule.forRoot(appRoutes, { relativeLinkResolution: "legacy" }),
+          NgBootstrapFormValidationModule.forRoot()
+        ],
+        declarations: [AppComponent],
+        providers: [{ provide: APP_BASE_HREF, useValue: "/" }]
+      }).compileComponents();
+    })
+  );
 
-  it("should create the app", waitForAsync(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
+  it(
+    "should create the app",
+    waitForAsync(() => {
+      const fixture = TestBed.createComponent(AppComponent);
+      const app = fixture.debugElement.componentInstance;
+      expect(app).toBeTruthy();
+    })
+  );
 });
