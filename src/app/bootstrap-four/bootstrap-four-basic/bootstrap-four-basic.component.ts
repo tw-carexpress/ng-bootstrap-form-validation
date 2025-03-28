@@ -1,5 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, FormControl, Validators, FormArray } from "@angular/forms";
+import {
+  UntypedFormGroup,
+  UntypedFormControl,
+  Validators,
+  UntypedFormArray
+} from "@angular/forms";
 
 @Component({
   selector: "app-bootstrap-four-basic",
@@ -7,21 +12,21 @@ import { FormGroup, FormControl, Validators, FormArray } from "@angular/forms";
   styleUrls: ["./bootstrap-four-basic.component.css"]
 })
 export class BootstrapFourBasicComponent implements OnInit {
-  formGroup = new FormGroup({
-    firstName: new FormControl("", Validators.required),
-    lastName: new FormControl("", Validators.required),
-    email: new FormControl("", Validators.email),
-    city: new FormControl("", Validators.required),
-    state: new FormControl("", Validators.required),
-    zip: new FormControl("", Validators.required),
-    phoneNumbers: new FormArray([
-      new FormGroup({
-        type: new FormControl("", Validators.required),
-        number: new FormControl("", Validators.required)
+  formGroup = new UntypedFormGroup({
+    firstName: new UntypedFormControl("", Validators.required),
+    lastName: new UntypedFormControl("", Validators.required),
+    email: new UntypedFormControl("", Validators.email),
+    city: new UntypedFormControl("", Validators.required),
+    state: new UntypedFormControl("", Validators.required),
+    zip: new UntypedFormControl("", Validators.required),
+    phoneNumbers: new UntypedFormArray([
+      new UntypedFormGroup({
+        type: new UntypedFormControl("", Validators.required),
+        number: new UntypedFormControl("", Validators.required)
       })
     ]),
-    agreeToTerms: new FormControl(false, Validators.required),
-    bestPet: new FormControl(null, Validators.required)
+    agreeToTerms: new UntypedFormControl(false, Validators.required),
+    bestPet: new UntypedFormControl(null, Validators.required)
   });
 
   constructor() {}

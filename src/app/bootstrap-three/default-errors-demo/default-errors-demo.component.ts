@@ -1,5 +1,9 @@
 import { Component, OnInit } from "@angular/core";
-import { FormGroup, Validators, FormControl } from "@angular/forms";
+import {
+  UntypedFormGroup,
+  Validators,
+  UntypedFormControl
+} from "@angular/forms";
 
 @Component({
   selector: "app-default-errors-demo",
@@ -7,12 +11,12 @@ import { FormGroup, Validators, FormControl } from "@angular/forms";
   styleUrls: ["./default-errors-demo.component.css"]
 })
 export class DefaultErrorsDemoComponent implements OnInit {
-  formGroup = new FormGroup({
-    email: new FormControl("", Validators.email),
-    requiredField: new FormControl("", Validators.required),
-    pattern: new FormControl("", Validators.pattern(/foobar/)),
-    minValue: new FormControl(0, Validators.min(10)),
-    maxValue: new FormControl(10, Validators.max(5))
+  formGroup = new UntypedFormGroup({
+    email: new UntypedFormControl("", Validators.email),
+    requiredField: new UntypedFormControl("", Validators.required),
+    pattern: new UntypedFormControl("", Validators.pattern(/foobar/)),
+    minValue: new UntypedFormControl(0, Validators.min(10)),
+    maxValue: new UntypedFormControl(10, Validators.max(5))
   });
 
   constructor() {}
