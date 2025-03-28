@@ -1,6 +1,6 @@
 {
   "name": "@creamteam-de/ng-bootstrap-form-validation",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "engine": {
     "node": ">=10.0.0"
   },
@@ -12,6 +12,6 @@
     "tslib": "^2.0.0"
   },
   "publishConfig": {
-    "registry": "https://gitlab.teamcl.de/api/v4/projects/217/packages/npm/"
+    "registry": "https://nexus.ct.teamware.group/repository/npm-private/"
   }
 }
