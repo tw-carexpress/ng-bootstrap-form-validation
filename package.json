@@ -45,7 +45,7 @@
     "@angular/platform-browser-dynamic": "^14.2.12",
     "@angular/router": "^14.2.12",
     "core-js": "^2.5.4",
-    "@creamteam-de/ng-bootstrap-form-validation": "13.0.0",
+    "@creamteam-de/ng-bootstrap-form-validation": "14.0.0",
     "rxjs": "^6.6.3",
     "tslib": "^2.6.2",
     "zone.js": "~0.11.4"
