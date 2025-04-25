@@ -150,7 +150,7 @@
     symbol-observable "4.0.0"
     yargs "17.7.2"
 
-"@angular/common@^16.2.12", "@angular/common@^17.3.12", "@angular/common@17.3.12":
+"@angular/common@^17.3.12", "@angular/common@17.3.12":
   version "17.3.12"
   resolved "https://registry.npmjs.org/@angular/common/-/common-17.3.12.tgz"
   integrity sha512-vabJzvrx76XXFrm1RJZ6o/CyG32piTB/1sfFfKHdlH1QrmArb8It4gyk9oEjZ1IkAD0HvBWlfWmn+T6Vx3pdUw==
@@ -178,7 +178,7 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^16.2.12", "@angular/core@^17.3.12", "@angular/core@17.3.12":
+"@angular/core@^17.3.12", "@angular/core@17.3.12":
   version "17.3.12"
   resolved "https://registry.npmjs.org/@angular/core/-/core-17.3.12.tgz"
   integrity sha512-MuFt5yKi161JmauUta4Dh0m8ofwoq6Ino+KoOtkYMBGsSx+A7dSm+DUxxNwdj7+DNyg3LjVGCFgBFnq4g8z06A==
@@ -1047,10 +1047,10 @@
   resolved "https://registry.npmjs.org/@colors/colors/-/colors-1.5.0.tgz"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
-"@creamteam-de/ng-bootstrap-form-validation@16.0.0":
-  version "16.0.0"
-  resolved "https://nexus.ct.teamware.group/repository/npm-private/@creamteam-de/ng-bootstrap-form-validation/-/ng-bootstrap-form-validation-16.0.0.tgz"
-  integrity sha512-D59tPrc8q3taUclXLWJuNfPC4aQWaOuiCYQgjGXVqPJFw8Sv2GDqf24m3gnDH/k3oJ+pozs0+DeknKls++v/9g==
+"@creamteam-de/ng-bootstrap-form-validation@17.0.0":
+  version "17.0.0"
+  resolved "https://nexus.ct.teamware.group/repository/npm-private/@creamteam-de/ng-bootstrap-form-validation/-/ng-bootstrap-form-validation-17.0.0.tgz"
+  integrity sha512-TMUyaYyxq0KOcgCcwNCZ9GAEM6ikMur5tkkYbzCiobr/R9c9/n7xBt71NFKQX/OCOvXN9xbprIxc1vYr/mQdUQ==
   dependencies:
     tslib "^2.6.2"
 
