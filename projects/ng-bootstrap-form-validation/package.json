@@ -1,12 +1,12 @@
 {
   "name": "@creamteam-de/ng-bootstrap-form-validation",
-  "version": "16.0.0",
+  "version": "17.0.0",
   "engine": {
     "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^16.2.12",
-    "@angular/core": "^16.2.12"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "tslib": "^2.6.2"
