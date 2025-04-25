@@ -36,14 +36,14 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^17.3.12",
-    "@angular/common": "^17.3.12",
-    "@angular/compiler": "^17.3.12",
-    "@angular/core": "^17.3.12",
-    "@angular/forms": "^17.3.12",
-    "@angular/platform-browser": "^17.3.12",
-    "@angular/platform-browser-dynamic": "^17.3.12",
-    "@angular/router": "^17.3.12",
+    "@angular/animations": "^18.2.13",
+    "@angular/common": "^18.2.13",
+    "@angular/compiler": "^18.2.13",
+    "@angular/core": "^18.2.13",
+    "@angular/forms": "^18.2.13",
+    "@angular/platform-browser": "^18.2.13",
+    "@angular/platform-browser-dynamic": "^18.2.13",
+    "@angular/router": "^18.2.13",
     "@creamteam-de/ng-bootstrap-form-validation": "17.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^7.4.0",
@@ -51,10 +51,10 @@
     "zone.js": "~0.14.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.3.16",
-    "@angular/cli": "^17.3.16",
-    "@angular/compiler-cli": "^17.3.12",
-    "@angular/language-service": "^17.3.12",
+    "@angular-devkit/build-angular": "^18.2.19",
+    "@angular/cli": "^18.2.19",
+    "@angular/compiler-cli": "^18.2.13",
+    "@angular/language-service": "^18.2.13",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -68,12 +68,12 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "lint-staged": "^15.5.0",
-    "ng-packagr": "^17.3.0",
+    "ng-packagr": "^18.2.1",
     "ng2-mock-component": "^0.1.1",
     "prettier": "^1.14.2",
     "protractor": "^7.0.0",
     "ts-node": "~5.0.1",
     "tslint": "~6.1.0",
-    "typescript": "5.2.2"
+    "typescript": "5.5.4"
   }
 }
