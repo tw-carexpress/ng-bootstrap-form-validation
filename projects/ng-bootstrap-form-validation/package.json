@@ -5,8 +5,8 @@
     "node": ">=10.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^18.2.13",
-    "@angular/core": "^18.2.13"
+    "@angular/common": "^19.2.8",
+    "@angular/core": "^19.2.8"
   },
   "dependencies": {
     "tslib": "^2.6.2"
