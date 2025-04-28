@@ -1,6 +1,6 @@
 {
   "name": "@creamteam-de/ng-bootstrap-form-validation",
-  "version": "18.0.1",
+  "version": "19.0.1",
   "engine": {
     "node": ">=10.0.0"
   },
@@ -58,15 +58,15 @@
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
-    "codelyzer": "^0.0.28",
+    "codelyzer": "^6.0.2",
     "husky": "^0.14.3",
-    "jasmine-core": "~3.6.0",
+    "jasmine-core": "~4.6.1",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.2",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
+    "karma-jasmine": "~5.0.0",
+    "karma-jasmine-html-reporter": "^2.1.0",
     "lint-staged": "^15.5.0",
     "ng-packagr": "^19.2.2",
     "ng2-mock-component": "^0.1.1",
