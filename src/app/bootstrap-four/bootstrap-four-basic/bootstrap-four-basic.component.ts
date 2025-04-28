@@ -9,7 +9,8 @@ import {
 @Component({
   selector: "app-bootstrap-four-basic",
   templateUrl: "./bootstrap-four-basic.component.html",
-  styleUrls: ["./bootstrap-four-basic.component.css"]
+  styleUrls: ["./bootstrap-four-basic.component.css"],
+  standalone: false
 })
 export class BootstrapFourBasicComponent implements OnInit {
   formGroup = new UntypedFormGroup({

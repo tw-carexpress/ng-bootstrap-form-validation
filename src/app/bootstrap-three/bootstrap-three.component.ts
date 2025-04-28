@@ -11,7 +11,8 @@ import { BOOTSTRAP_VERSION } from "../../../projects/ng-bootstrap-form-validatio
       provide: BOOTSTRAP_VERSION,
       useValue: BootstrapVersion.Three
     }
-  ]
+  ],
+  standalone: false
 })
 export class BootstrapThreeComponent implements OnInit, OnDestroy {
   link: HTMLLinkElement;

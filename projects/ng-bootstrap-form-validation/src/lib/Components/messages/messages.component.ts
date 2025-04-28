@@ -16,7 +16,8 @@ import { BOOTSTRAP_VERSION } from "../../Tokens/tokens";
         display: block;
       }
     `
-  ]
+  ],
+  standalone: false
 })
 export class MessagesComponent {
   @Input()

@@ -20,7 +20,8 @@ import { ErrorMessage } from "../../Models/error-message";
   template: `
     <ng-content></ng-content>
     <bfv-messages *ngIf="!messagesBlock" [messages]="messages"></bfv-messages>
-  `
+  `,
+  standalone: false
 })
 export class FormGroupComponent implements OnInit, AfterContentInit {
   @ContentChildren(FormControlName, { descendants: true })

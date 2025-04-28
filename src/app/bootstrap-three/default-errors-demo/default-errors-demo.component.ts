@@ -8,7 +8,8 @@ import {
 @Component({
   selector: "app-default-errors-demo",
   templateUrl: "./default-errors-demo.component.html",
-  styleUrls: ["./default-errors-demo.component.css"]
+  styleUrls: ["./default-errors-demo.component.css"],
+  standalone: false
 })
 export class DefaultErrorsDemoComponent implements OnInit {
   formGroup = new UntypedFormGroup({
